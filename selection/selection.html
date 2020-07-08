@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selection Pada jQuery</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+	<h1>Belajar jQuery Dasar</h1>
+	<div id="box1">Box 1</div>
+
+	<div class="boxes">Baris Pertama</div>
+	<div class="boxes">Baris Kedua</div>
+	<div class="boxes">Baris Dua Koma Lima</div>
+	<div class="boxes">Baris Ketiga</div>
+
+	<script>
+		$(document).ready(function() {
+			$('h1').css('color', 'red')
+			$('#box1').css('color', 'blue')
+			$('.boxes').css('color', 'green')
+
+			$('.boxes:first').css('color', 'lightskyblue')
+			$('.boxes:last').css('color', 'aqua')
+			$('.boxes:eq(1)').css('color', 'gray')
+		})
+	</script>
+
+</body>
+</html>

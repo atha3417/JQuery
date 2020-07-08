@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memanipulasi Dimensi Dengan jQuery</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<style>
+		#box1 {
+			width: 150px;
+			height: 150px;
+			background-color: salmon;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 class="change">Belajar jQuery Dasar</h1>
+	
+	<div id="tester">
+		<div>
+			Div Pertama Banget
+		</div>
+		<div>
+			Div kedua banget
+			<ul>
+				<li>List Pertama</li>
+			</ul>
+			<ul>
+				<p>Paragraf Atas</p>
+				<li>Belajar!!!</li>
+				<li>HTML</li>
+				<li id="css">CSS</li>
+				<li>JavaScript</li>
+				<li id="jquery">jQuery</li>
+				<li>PHP</li>
+				<li id="db">Database</li>
+				<li>OOPHP</li>
+				<div>
+					<p>Pargraf Dalam</p>
+					<span>Spanan Dalam</span>
+				</div>
+				<span>Spanan Luar</span>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			// $('ul').children().css('color', 'red')
+			// $('ul').children('span').css('color', 'aqua')
+			// $('ul').find('span').css('color', 'green')
+
+
+			// $('#jquery').parent().css('backgroundColor', 'yellow')
+			// $('#jquery').parents('ul').css('border', '2px solid black')
+			$('#jquery').parentsUntil('#tester').css('border', '2px solid black')
+		})
+	</script>
+</body>
+</html>

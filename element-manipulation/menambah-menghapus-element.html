@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menambah Menghapus Element Dengan jQuery</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<style>
+		#boxes-wrap {
+			width: 100px;
+			height: 100px;
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Belajar jQuery Dasar</h1>
+	</div>
+	<div id="box1">Box 1</div>
+
+	<div id="boxes-wrap">
+		<div class="boxes">Baris Pertama</div>
+		<div class="boxes">Baris Kedua</div>
+		<div class="boxes">Baris Dua Koma Lima</div>
+		<div class="boxes">Baris Ketiga</div>
+	</div>
+
+	<form>
+		<input type="text" id="inputText" autocomplete="off">
+		<input type="submit">
+	</form>
+
+	<script>
+		$(document).ready(function() {
+			// append() = memunculkan element di akhir parent
+			// $('#boxes-wrap').append('<div>Halo</div>')
+			
+			// prepend() = memunculkan element di awal parent
+			// $('#boxes-wrap').prepend('<div>Halo</div>')
+			
+			// before() = memunculkan element di sebelum element yang kita tentukan
+			// $('#boxes-wrap').before('<div>Halo</div>')
+			
+			// after() = memunculkan element di sesudah element yang kita tentukan
+			// $('#boxes-wrap').after('<div>Halo</div>')
+			
+			// remove() = menghapus element yang kita pilih
+			// $('#boxes-wrap').remove()
+			
+			// empty() = menghapus content yang kita pilih
+			$('#boxes-wrap').empty()
+		})
+	</script>
+
+</body>
+</html>

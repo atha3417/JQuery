@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memanipulasi Dimensi Dengan jQuery</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<style>
+		#box1 {
+			width: 150px;
+			height: 150px;
+			background-color: salmon;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 class="change">Belajar jQuery Dasar</h1>
+	<div id="box1">Box 1</div>
+	<br>
+
+	<button type="button" id="btn1">Show</button>
+	<button type="button" id="btn2">Hide</button>
+	<button type="button" id="btn3">Toggle</button>
+	<!-- <button type="button" id="btn4">FadeTo</button> -->
+
+	<script>
+		$(document).ready(function() {
+			// $('#btn1').click(function() {
+			// 	$('#box1').show()
+			// })
+
+			// $('#btn2').click(function() {
+			// 	$('#box1').hide()
+			// })
+
+			// $('#btn3').click(function() {
+			// 	$('#box1').toggle()
+			// })
+
+
+
+
+			// $('#btn1').click(function() {
+			// 	$('#box1').fadeIn(1500)
+			// })
+
+			// $('#btn2').click(function() {
+			// 	$('#box1').fadeOut(1500)
+			// })
+
+			// $('#btn3').click(function() {
+			// 	$('#box1').fadeToggle(1500)
+			// })
+
+			// $('#btn4').click(function() {
+			// 	$('#box1').fadeTo(1500, 0.5)
+			// })
+			
+
+
+			$('#btn1').click(function() {
+				$('#box1').slideDown(1500)
+			})
+
+			$('#btn2').click(function() {
+				$('#box1').slideUp(1500)
+			})
+
+			$('#btn3').click(function() {
+				$('#box1').slideToggle()
+			})
+		})
+	</script>
+</body>
+</html>

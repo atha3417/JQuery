@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manipulasi DOM Pada jQuery</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Belajar jQuery Dasar</h1>
+	</div>
+	<div id="box1">Box 1</div>
+
+	<div class="boxes-wrap">
+		<div class="boxes">Baris Pertama</div>
+		<div class="boxes">Baris Kedua</div>
+		<div class="boxes">Baris Dua Koma Lima</div>
+		<div class="boxes">Baris Ketiga</div>
+	</div>
+
+	<form>
+		<input type="text" id="inputText" autocomplete="off">
+	</form>
+
+	<script>
+		$(document).ready(function() {
+			$('form').on('keyup', function() {
+				let tulisan = $('#inputText').val()
+				$('h1').text(tulisan)
+				event.preventDefault()
+			})
+
+			$('#box1').click(function() {
+				let html = $('form').html()
+				$('#box1').text(html)
+			})
+
+		})
+	</script>
+
+</body>
+</html>
