@@ -1,0 +1,13 @@
+{
+    "name": "atha/jquery",
+    "description": "Just JavaScript - JQuery code",
+    "keywords": ["jquery", "js", "javascript"],
+    "license": "None",
+    "authors": [
+        {
+            "name": "Atha Tsaqif",
+            "email": "atha.3417@gmail.com",
+            "homepage": "http://example.com/"
+        }
+    ]
+}
